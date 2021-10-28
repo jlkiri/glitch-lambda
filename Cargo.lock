@@ -188,8 +188,6 @@ dependencies = [
  "lambda_http",
  "lambda_runtime",
  "rand",
- "serde",
- "serde_json",
  "tokio",
 ]
 

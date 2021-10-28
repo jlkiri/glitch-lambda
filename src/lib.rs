@@ -17,3 +17,13 @@ pub fn glitch_sort(image: &mut [u8]) {
     let (glitched, _rest) = right.split_at_mut(CHUNK_LEN);
     glitched.sort();
 }
+
+pub fn glitch(image: &mut [u8]) {
+    glitch_replace(image);
+    glitch_sort(image);
+    glitch_replace(image);
+    glitch_sort(image);
+    glitch_replace(image);
+    glitch_sort(image);
+    glitch_sort(image);
+}
